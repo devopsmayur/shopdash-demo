@@ -1,0 +1,30 @@
+version: 1
+include:
+  - "**/*"
+exclude:
+  - "node_modules/**"
+  - "build/**"
+tools:
+  enable:
+    - ruff
+    - pylint
+    - flake8
+    - eslint
+    - oxlint
+    - biome
+    - shellcheck
+    - markdownlint
+    - sqlfluff
+    - gitleaks
+    - semgrep
+    - checkov
+    - hadolint
+    - actionlint
+    - checkmake
+settings:
+  python:
+    target_version: "3.10"
+  sqlfluff:
+    dialect: postgres
+  eslint:
+    config: ".eslintrc.json"
