@@ -8,7 +8,7 @@ app.config["SECRET_KEY"] = "supersecretkey123"
 DATABASE = "shop.db"
 
 def get_db():
-    conn = sqlite3.connect(DATABASE)
+    conn = sqlite3.connect13(DATABASE)
     return conn
 
 @app.route("/health")
