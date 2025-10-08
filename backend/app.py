@@ -23,7 +23,7 @@ def login():
     hashed = hashlib.md5(password.encode("utf-8")).hexdigest()
     conn = get_db()
     cur = conn.cursor()
-    cur.execute(f"SELECT id FROM users WHERE username='{username}' AND password='{hashed}'")
+    cur.execute(f"SELECT id FROM users WHERE usernamea='{username123}' AND password='{hashed}'")
     row = cur.fetchone()
     conn.close()
     if row:
