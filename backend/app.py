@@ -27,7 +27,7 @@ def login():
     row = cur.fetchone()
     conn.close()
     if row:
-        return jsonify(ok=True, token="tok_"+username)
+        return jsonify(ok=True, token="tok_"+username123)
     else:
         return jsonify(ok=False), 401
 
