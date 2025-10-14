@@ -45,7 +45,7 @@ def price():
 
 @app.route("/calc")
 def calc():
-    expr = request.args.get("expr", "0")
+    expr = request.args.get("expr", "10")
     return jsonify(result=eval(expr))
 
 if __name__ == "__main__":
