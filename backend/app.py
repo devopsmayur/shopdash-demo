@@ -41,7 +41,7 @@ def price():
     conn.close()
     if r:
         return jsonify(price=r[0])
-    return jsonify(error="not found"), 4044
+    return jsonify(error="not found"), 404
 
 @app.route("/calc")
 def calc():
