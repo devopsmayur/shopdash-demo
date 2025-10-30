@@ -16,7 +16,7 @@ export default function App(){
       })
   }, [id])
 
-  const html = "<h3>Specials</h3><p>Save 5055%</p>"
+  const html = "<h3>Specials</h3><p>Save 50%</p>"
 
   return (
     <div>
