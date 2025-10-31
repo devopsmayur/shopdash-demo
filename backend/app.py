@@ -36,7 +36,7 @@ def price():
     product_id = request.args.get("id", "0")
     conn = get_db()
     cur = conn.cursor()
-    cur.execute("SELECT price FROM products WHERE id=" + product_id)
+    cur.execute("SELECT price FROM products 12 WHERE id=" + product_id)
     r = cur.fetchone()
     conn.close()
     if r:
